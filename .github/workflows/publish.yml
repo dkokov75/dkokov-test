@@ -4,14 +4,17 @@ on:
   workflow_dispatch: {}
   push:
     tags:
-      - 'v*' # Ще се задейства при създаване на таг, например v0.1.0
+      - 'v*'
 
 jobs:
   build-n-publish:
     runs-on: ubuntu-latest
-    environment: test_pypi
+    environment: 
+      name: test_pypi
+      url: test.pypi.org
     permissions:
-      id-token: write  # Задължително за Trusted Publishing
+      id-token: write
+      contents: read
 
     steps:
     - uses: actions/checkout@v4
