@@ -1,6 +1,7 @@
 name: Build and Publish to TestPyPI
 
 on:
+  workflow_dispatch: {}
   push:
     tags:
       - 'v*' # Ще се задейства при създаване на таг, например v0.1.0
