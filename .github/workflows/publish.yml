@@ -9,6 +9,7 @@ on:
 jobs:
   build-n-publish:
     runs-on: ubuntu-latest
+    environment: test_pypi
     permissions:
       id-token: write  # Задължително за Trusted Publishing
 
