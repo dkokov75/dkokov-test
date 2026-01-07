@@ -9,9 +9,6 @@ on:
 jobs:
   build-n-publish:
     runs-on: ubuntu-latest
-    environment: 
-      name: test_pypi
-      url: test.pypi.org
     permissions:
       id-token: write
       contents: read
