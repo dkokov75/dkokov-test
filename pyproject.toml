@@ -4,7 +4,7 @@ build-backend = "setuptools.build_meta"
 
 [project]
 name = "dkokov-test-3"
-version = "1.0.2"
+version = "1.0.3"
 authors = [
   { name="Dimitar Kokov", email="dkokov75@gmail.com" },
 ]
